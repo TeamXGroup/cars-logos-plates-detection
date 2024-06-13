@@ -24,9 +24,11 @@ Welcome to our Vehicle Logo and License Plate Detection project!  Our goal is to
 <b>  ● OpenCV:</b> OpenCV is used for image and video processing tasks, enhancing the capabilities of our platform.
 
 <h2 id="ressources"> 📂 Ressources</h2>
-<b>  ● Datasets Used:</b><br><br> Logos Dataset : https://universe.roboflow.com/ms3b/logos-teamx/dataset/1.<br>
-                          Plates Dataset : https://universe.roboflow.com/plate-detection/plate_detection-tp5h9<br><br>
-<b>  ● App Demo:</b> Soon....
+<b>  ● Datasets Used:</b><br><br> 
+<li><a href="https://universe.roboflow.com/ms3b/logos-teamx/dataset/1">Logos Dataset</a></li>
+<li><a href="https://universe.roboflow.com/plate-detection/plate_detection-tp5h9">Plates Dataset</a></li>
+
+
 
 
 
