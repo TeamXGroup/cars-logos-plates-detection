@@ -19,7 +19,7 @@ Welcome to our Vehicle Logo and License Plate Detection project!  Our goal is to
 
 <h2 id="technologies-used"> 🛠️ Technologies Used</h2>
 <b>  ● Python:</b> We have implemented our project using Python, leveraging its flexibility and rich ecosystem of libraries.<br><br>
-<b>  ● Streamlit:</b> Our web application is built using Streamlit, a popular Python framework for building interactive web apps.<br><br>
+<b>  ● Streamlit:</b> Our web application uses Streamlit, a popular Python framework for building interactive web apps.<br><br>
 <b>  ● YOLOv8:</b> We have chosen YOLOv8 as our object detection model for its state-of-the-art performance and accuracy.<br><br>
 <b>  ● OpenCV:</b> OpenCV is used for image and video processing tasks, enhancing the capabilities of our platform.
 
