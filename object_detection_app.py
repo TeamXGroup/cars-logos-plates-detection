@@ -13,7 +13,6 @@ import base64,os
 import cv2
 import plotly.graph_objects as go
 import time, math, cvzone
-import moviepy.editor as moviepy
 
 
 
@@ -250,5 +249,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
