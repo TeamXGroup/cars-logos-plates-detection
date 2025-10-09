@@ -11,4 +11,4 @@ streamlit-shadcn-ui>=0.1.18
 streamlit-extras>=0.4.2
 plotly>=5.22.0
 requests>=2.31.0
-moviepy>=1.0.3
+
