@@ -6,7 +6,6 @@ from streamlit_lottie import st_lottie
 import streamlit_shadcn_ui as ui
 import tempfile
 from streamlit_extras.colored_header import colored_header
-from streamlit_extras.no_default_selectbox import selectbox
 from PIL import Image
 from ultralytics import YOLO
 import base64,os
@@ -124,7 +123,12 @@ def main():
         models = st.multiselect("**Select Objects to Detect** :",
                         ["Car", "Logo", "Plate"],
                         ["Car", "Logo", "Plate"])
-        choice = selectbox('**Please Select your Input File Type** :',["Upload Image", "Upload Video", "Use Webcam",])
+        choice = st.selectbox(
+                    "**Please Select your Input File Type** :",
+                    ["Upload Image", "Upload Video", "Use Webcam"],
+                    index=None,
+                    placeholder="Select input type..."
+                )
 
 
         # Case1: Upload Image
