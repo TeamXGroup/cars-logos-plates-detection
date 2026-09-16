@@ -142,7 +142,11 @@ def main():
                     width, height = uploaded_image.size
                     st.image(source_img, caption="Uploaded Image", width="stretch")
     
-                clicked = ui.button(text="Detect Objects", key="styled_btn_tailwind", className="bg-red-500 text-white font-bold")
+                clicked = ui.button(
+                              label="Detect Objects",
+                              key="styled_btn_tailwind",
+                              variant="default"
+                          )
                 if clicked:
                     with col2:
                         overlay_image, logo_boxes, logo_names = detect_image(models, uploaded_image, confidence)
@@ -183,7 +187,11 @@ def main():
                     st.video(video_bytes)
                     #st.write("Uploaded Video")
                 
-                clicked = ui.button(text="Detect Objects", key="styled_btn_tailwind", className="bg-red-500 text-white font-bold")
+                clicked = ui.button(
+                              label="Detect Objects",
+                              key="styled_btn_tailwind",
+                              variant="default"
+                          )
                 if clicked:
                     col1, col2, col3 = st.columns((1,8,1))
                     with col2:
@@ -214,7 +222,10 @@ def main():
 
         # Case 3 : Use Webcam
         elif choice == 'Use Webcam':
-            clicked = ui.button(text="Open Camera", key="styled_btn_tailwind", className="bg-red-500 text-white font-bold")
+            clicked = ui.button(
+                          label="Open Camera",
+                          key="open_camera_btn"
+                      )
             if clicked:
                 # Loading camera
                 cap = cv2.VideoCapture(0)
