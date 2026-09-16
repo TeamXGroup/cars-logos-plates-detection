@@ -140,7 +140,7 @@ def main():
                     uploaded_image = Image.open(source_img)
                     uploaded_image_np = np.asarray(uploaded_image)
                     width, height = uploaded_image.size
-                    st.image(source_img, caption="Uploaded Image", use_column_width=True)
+                    st.image(source_img, caption="Uploaded Image", width="stretch")
     
                 clicked = ui.button(text="Detect Objects", key="styled_btn_tailwind", className="bg-red-500 text-white font-bold")
                 if clicked:
@@ -150,7 +150,7 @@ def main():
                         st.image(overlay_image,
                             caption="Detected Image",
                             channels='BGR',
-                            use_column_width=True)
+                            width="stretch")
                         try:
                             with st.expander("Detection Results"):
                                 if (len(logo_boxes) > 0) and ("Logo" in models):
@@ -205,7 +205,7 @@ def main():
                                 st_frame.image(overlay_image,
                                     caption='Detected Video',
                                     channels='BGR',
-                                    use_column_width=True
+                                    width="stretch"
                                 )
                             else:
                                 break
@@ -243,7 +243,7 @@ def main():
                         st_frame.image(overlay_image,
                                     caption='Webcam Detection',
                                     channels='BGR',
-                                    use_column_width=True
+                                    width="stretch"
                                     )
                         key = cv2.waitKey(1)
                     else:
